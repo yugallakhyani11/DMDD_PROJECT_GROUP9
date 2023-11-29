@@ -2185,9 +2185,9 @@ INSERT INTO [dbo].[INCIDENTS] ([TYPE], INCIDENT_TIMESTAMP, INCIDENT_DESCRIPTION,
 -- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 -- Inserting data into MAINTENANCE table
-INSERT INTO [dbo].[MAINTENANCE] ([CARD_ID], [TRAIN_ID], [PERSON_INCHARGE], [DATE], [DESCRIPTION], [TYPE_OF_MAINTENANCE]) VALUES (40000, 8729, 127, '2023-11-25', 'Regular maintenance for Train 8729', 'Regular Maintenance'),
-    (40001, 8731, 128, '2023-11-26', 'Accidental maintenance for Train 8731', 'Accidental Maintenance'),
-    (40002, 8732, 127, '2023-11-27', 'Regular maintenance for Train 8732', 'Regular Maintenance'),
-    (40003, 8733, 128, '2023-11-28', 'Accidental maintenance for Train 8733', 'Accidental Maintenance'),
-    (40004, 8734, 127, '2023-11-29', 'Regular maintenance for Train 8734', 'Regular Maintenance');
-
+INSERT INTO [dbo].[MAINTENANCE] (TRAIN_ID, PERSON_INCHARGE, [DATE], [DESCRIPTION], TYPE_OF_MAINTENANCE)
+VALUES (8729, 127, '2023-11-25', 'Regular maintenance for Train 8729', 'Regular Maintenance'),
+    (8731, 128, '2023-11-26', 'Accidental maintenance for Train 8731', 'Accidental Maintenance'),
+ (8732, 127, '2023-11-27', 'Regular maintenance for Train 8732', 'Regular Maintenance'),
+ (8733, 128, '2023-11-28', 'Accidental maintenance for Train 8733', 'Accidental Maintenance'),
+ (8734, 127, '2023-11-29', 'Regular maintenance for Train 8734', 'Regular Maintenance');
