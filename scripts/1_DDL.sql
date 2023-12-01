@@ -601,29 +601,7 @@ ON [dbo].[INCIDENTS] (INCIDENT_TIMESTAMP);
 
 --------------------------------------------------------------------------------------------------------------------------------
 
---View to look all the incidents that took place on a particular day
-IF OBJECT_ID('[dbo].[VIEW_INCIDENTS_BY_DATE]', 'V') IS NOT NULL
-    DROP VIEW [dbo].[VIEW_INCIDENTS_BY_DATE];
-GO
 
-CREATE VIEW VIEW_INCIDENTS_BY_DATE AS
-SELECT 
-    INCIDENT_ID, 
-    [TYPE], 
-    INCIDENT_TIMESTAMP, 
-    INCIDENT_DESCRIPTION, 
-    EMPLOYEE_INVOLVED, 
-    VEHICLE_INVOLVED
-FROM 
-    [dbo].[INCIDENTS];
-GO
-
--- Example to View the incidents
--- SELECT * FROM VIEW_INCIDENTS_BY_DATE
--- WHERE CAST(INCIDENT_TIMESTAMP AS DATE) = '2023-11-25';  
-
-
------------------------------------------------------------------------------------------------------------------
 -- Create a new table called '[MAINTENANCE]' in schema '[dbo]'
 -- Drop the table if it already exists
 IF OBJECT_ID('[dbo].[MAINTENANCE]', 'U') IS NOT NULL
@@ -645,8 +623,7 @@ CREATE TABLE [dbo].[MAINTENANCE]
 );
 GO
 
------------------------------------------------------------------------------------------------------------------
-
+------------------------------------------------------------------------------------------------------------------------------
 
 USE MASTER 
 GO
