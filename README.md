@@ -145,7 +145,9 @@ For frontend:
    ```shell
    streamlit run main.py
    ```
+## Power BI Report
 
+![Report](https://github.com/yugallakhyani11/DMDD_PROJECT_GROUP9/blob/main/Visualization/PowerBI%20Report.png)
 
 ## Contributors
 
