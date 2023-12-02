@@ -58,6 +58,16 @@ Our database is structured around several key entities, each representing a cruc
 #### - `TGR_UPDATE_COMPLAINT_STATUS`
    - Updates the status of a complaint to 'Resolved' after a response is added.
 
+#### - `TGR_UPDATE_COMPLAINT_STATUS`
+   - Updates the status of a complaint to 'Resolved' after a response is added.
+
+#### - `TGR_CHECK_RECHARGE_TRANSACTION`
+   - Updates TRANSIT_CARD balance after addition of recharge transaction.
+
+#### - `TGR_CHECK_JOURNEY_TRANSACTION`
+   - Updates TRANSIT_CARD balance after addition of journey transaction.
+
+
 ### 4. Views
 
 #### - `VIEW_DETAILED_RIDER_INFO`
@@ -69,13 +79,34 @@ Our database is structured around several key entities, each representing a cruc
 #### - `VIEW_ENHANCED_STATION_SCHEDULE_TRAFFIC`
    - Provides an overview of station activities, including train schedules, route details, and maintenance status.
 
+#### - `VIEW_SUMMARY_BY_ROUTE`
+   - Provides no of stations and no of trains on each route
+
+#### - `VIEW_WEEKEND_SCHEDULE_SUMMARY_BY_ROUTE`
+   - Provides route based weekend schedules of trains for every start stations.
+
+#### - `VIEW_WEEKDAY_SCHEDULE_SUMMARY_BY_ROUTE`
+   - Provides route based weekday schedules of trains for every start stations.
+
 ### 5. Table-Level Check Constraints
 
 Several check constraints are in place to ensure the validity and consistency of data. These include checks on employee roles, payment methods, incident types, transaction types, employee age, and contact information.
 
-### 6. Non-Clustered Indexes
+### 6. Power BI Report
 
-A non-clustered index, `IDX_INCIDENT_TIMESTAMP`, has been implemented to optimize search queries on the INCIDENTS table by indexing the INCIDENT_TIMESTAMP column.
+   Visualization report that gives information about:
+   - Schedule based on routes
+   - Statistics about trains and stations in each route
+   - Transaction summary 
+   - Employee role distribution
+   - Different types of incidents that have occurred 
+   - No of resolved and pending complaints
+
+### 7. Graphical User Interface
+   - To get schedule trains within two stations
+   - To add balance in transit card and to purchase a ticket
+
+
 
 ## Getting Started
 
@@ -114,6 +145,7 @@ For frontend:
    ```shell
    streamlit run main.py
    ```
+
 
 ## Contributors
 
