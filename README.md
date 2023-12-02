@@ -94,6 +94,8 @@ Several check constraints are in place to ensure the validity and consistency of
 
 ### 6. Power BI Report
 
+   ![Report](https://github.com/yugallakhyani11/DMDD_PROJECT_GROUP9/blob/main/Visualization/PowerBI%20Report.png)
+
    Visualization report that gives information about:
    - Schedule based on routes
    - Statistics about trains and stations in each route
@@ -145,9 +147,6 @@ For frontend:
    ```shell
    streamlit run main.py
    ```
-## Power BI Report
-
-![Report](https://github.com/yugallakhyani11/DMDD_PROJECT_GROUP9/blob/main/Visualization/PowerBI%20Report.png)
 
 ## Contributors
 
