@@ -150,10 +150,10 @@ For frontend:
 
 ## Contributors
 
-- Uddhav Zambare (30 %)
-- Yugal Lakhyani (30 %)
-- Suhasini Polampelly (30 %)  
-- Aditya Kotla (10 %)
+- Uddhav Zambare
+- Yugal Lakhyani
+- Suhasini Polampelly
+- Aditya Kotla
 
 ## License
 
